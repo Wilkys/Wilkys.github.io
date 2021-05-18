@@ -114,7 +114,7 @@ header nav a#trigger::after {
     line-height: 40px;
   }
   header nav a#trigger {
-    display: none;
+    display:none;
   }
 
 }
