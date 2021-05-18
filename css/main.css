@@ -1,12 +1,19 @@
 body {
-  color: #333;
+  color: rgb(221, 215, 215);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
+  background:url('../images/windmill.jpg') no-repeat right bottom fixed;
+  background-size: cover;
 }
 a {
   text-decoration: none;
+}
+a:link, a:hover, a:visited {
+  color:#fff;
+  text-decoration:none;
+  text-shadow:1px 1px 0 #283744;
 }
 .inner {
   width: 700px;
@@ -31,16 +38,87 @@ a {
   color: #fff;
 }
 
+
 /* HEADER */
+/** Mobile 화면 **/
 header {
-  width: 100%;
-  background-color: #f6f5f0;
+  width: 100%;  
   border-bottom: 1px solid #c8c8c8;
   position: fixed;
   top: 0;
   z-index: 9;
 }
-header > .inner {
+header nav {
+  width: 100%;
+  height: auto;
+  background: #34495e;  
+}
+header nav ul {
+  display: none;
+  height: auto;
+}
+header nav ul li {
+  display: block;
+  width: 100%;
+  text-align:center;
+  border-bottom: 1px solid #576979; 
+}
+header nav ul li a{
+  line-height: 50px;
+}
+header nav a#trigger {
+  display:block;
+  background-color:#283744;
+  width:100%;
+  padding-left:15px;
+  line-height:40px;    
+  position:relative;
+}
+header nav a#trigger::after {
+  content:"";
+  background:url('../images/nav.png') no-repeat;
+  width:30px;
+  height:30px;
+  display:inline-block;
+  position: absolute;
+  right:15px;
+  top:10px;
+}
+
+/** Desktop 화면 **/
+@media screen and (min-width:721px){
+  header nav {
+    height: 40px;
+    border-bottom: 2px solid #34495e;
+  }
+  header nav ul {
+    display: block;
+    width: 720px;
+    height: 40px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  header nav ul li {
+    display: inline-block;
+    width: 120px;
+    border-bottom: 0;
+    border-right: 1px solid #576979;
+    margin-right: -6px;
+  }
+  header nav ul li:list-child{
+    border-right: 0;
+  }
+  header ul li a {
+    font-size: 1em;
+    line-height: 40px;
+  }
+  header nav ul li a#trigger {
+    display: none;
+  }
+
+}
+/* header > .inner {
   height: 60px;  
 }
 header .main-menu {
@@ -72,4 +150,4 @@ header .main-menu ul.menu li a {
   padding: 11px 16px;
   display: block;
   color: #656565;
-}
+} */

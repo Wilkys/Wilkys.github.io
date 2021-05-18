@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Starbucks Coffee Korea</title>
+    <title>Do what you want!</title>
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <div class="inner">
-        <div class="main-menu">
-          <ul class="menu">
+      <nav>        
+          <ul>
             <li>
               <a href="https://wizardly-beaver-84a585.netlify.app">스타벅스</a>
             </li>
@@ -25,12 +21,27 @@
             </li>
             <li>
               <a href="javascript:void(0)">테스트2</a>
-            </li>
-          </ul>
-          <!-- <a href="./index2.html">2 X 5 화면구성</a> &nbsp;&nbsp;&nbsp;
-          <a href="./index3.html">3 X 3 화면구성</a> -->
-        </div>
-      </div>
+            </li>            
+          </ul>  
+          <a href="#" id="trigger">MENU</a>        
+      </nav>
     </header>
+    <script src="./js/jquery-2.2.4.min.js"></script>     
+    <script>
+      $(function () {
+        var trigger = $('#trigger');
+        var menu = $('header nav ul');
+        $(trigger).on('click', function (e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+        $(window).resize(function () {
+          var w = $(window).width();
+          if (w > 320 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+          }
+        });
+      });
+      </script>
   </body>
 </html>
