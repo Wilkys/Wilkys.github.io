@@ -113,7 +113,7 @@ header nav a#trigger::after {
     font-size: 1em;
     line-height: 40px;
   }
-  header nav ul li a#trigger {
+  header nav a#trigger {
     display: none;
   }
 
