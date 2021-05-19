@@ -93,7 +93,7 @@ header nav a#trigger::after {
   }
   header nav ul {
     display: block;
-    width: 720px;
+    width: 900px;
     height: 40px;
     padding: 0;
     margin: 0 auto;
