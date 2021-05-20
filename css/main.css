@@ -149,6 +149,10 @@ header nav a#trigger::after {
   display: flex;
   justify-content: center;
 }
+.skills .inner {
+  display: flex;
+  justify-content: center;
+}
 .skills .inner img {
   
   height: 70px;
