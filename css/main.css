@@ -7,6 +7,9 @@ body {
   background:url('../images/xps-g2E2NQ5SWSU-unsplash.jpg') no-repeat right bottom fixed;
   background-size: cover;
 }
+section {
+  max-width: 768px;
+}
 a {
   text-decoration: none;
 }
@@ -90,6 +93,7 @@ header nav a#trigger::after {
   header nav {
     height: 40px;
     border-bottom: 2px solid #34495e;
+    /* display: none; */
   }
   header nav ul {
     display: block;
@@ -118,36 +122,94 @@ header nav a#trigger::after {
   }
 
 }
-/* header > .inner {
-  height: 60px;  
-}
-header .main-menu {
-  position: absolute;
-  display: flex;    
-  bottom: 20px;
-  right: 50px;   
-}
-header .main-menu ul.menu {
-  display: flex;    
-}
-header .main-menu ul.menu li {
+
+
+/* About */
+.about {
   position: relative;
+  background-color: palevioletred;
+  /* height: 70px; */
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
 }
-header .main-menu ul.menu li::before {
-  content: "";
-  width: 1px;
-  height: 12px;
-  background-color: #e5e5e5;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+
+/* Skills */
+.skills {
+  position: relative;
+  background-color: palevioletred;
+  margin: 0 auto;
+  /* height: 70px; */
+  /* margin: 50px auto;
+  display: flex;
+  justify-content: center; */
 }
-header .main-menu ul.menu li:first-child::before {
-  display: none;
+.skills h2{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
-header .main-menu ul.menu li a {
-  padding: 11px 16px;
-  display: block;
-  color: #656565;
-} */
+.skills .inner img {
+  
+  height: 70px;
+}
+
+
+/* Career */
+.career {
+  position: relative;
+  background-color: palevioletred;
+  /* height: 70px; */
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Projects */
+
+.projects {
+  background-color: royalblue;
+  border-radius: 10px;
+  position: relative;
+  top:60px;
+  max-width: 700px;
+  padding: 10px;
+  margin: 0 auto;  
+}
+.projects .inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects .inner h2 {
+  
+}
+.projects .inner .project_item {
+  background-color: orange;
+  width: 190px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  box-sizing: border-box;     
+
+}
+.projects .inner .project_item a {
+  margin: 0 auto;
+}
+
+/* Contact */
+#contact {
+  position: relative;
+  background-color: palevioletred;
+  /* height: 70px; */
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+#contact .inner {
+  display: flex;
+  justify-content: center;
+}
