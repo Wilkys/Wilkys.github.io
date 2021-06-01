@@ -10,10 +10,15 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
   background:url('../images/xps-g2E2NQ5SWSU-unsplash.jpg') no-repeat right bottom fixed;
   background-size: cover;
+<<<<<<< HEAD
   position: relative;  
+=======
+  scroll-behavior: smooth;
+>>>>>>> 6a4bd64e40107afb260e101d14d0ffc250f7f675
 }
 section {
   max-width: 768px;
+  margin:0 auto;
 }
 a {
   text-decoration: none;
