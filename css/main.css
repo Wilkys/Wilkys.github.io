@@ -6,6 +6,7 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
   background:url('../images/xps-g2E2NQ5SWSU-unsplash.jpg') no-repeat right bottom fixed;
   background-size: cover;
+  scroll-behavior: smooth;
 }
 section {
   max-width: 768px;
