@@ -10,15 +10,12 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
   background:url('../images/xps-g2E2NQ5SWSU-unsplash.jpg') no-repeat right bottom fixed;
   background-size: cover;
-<<<<<<< HEAD
-  position: relative;  
-=======
-  scroll-behavior: smooth;
->>>>>>> 6a4bd64e40107afb260e101d14d0ffc250f7f675
 }
 section {
-  max-width: 768px;
+  width: 768px;
   margin:0 auto;
+  padding: 10px;
+  border-radius: 4px;
 }
 a {
   text-decoration: none;
@@ -29,7 +26,6 @@ a:link, a:hover, a:visited {
   text-shadow:1px 1px 0 #283744;
 }
 .inner {
-  width: 700px;
   margin: 0 auto;
   position: relative;
 }
@@ -139,17 +135,21 @@ header nav a#trigger::after {
 /* About */
 .about {
   position: relative;
-  background-color: palevioletred;
-  /* height: 70px; */
+  background-color: rgba(223, 227, 236, 0.5);
+  height: 70px;
   margin: 50px auto;
+  padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color:rgb(39, 36, 39);
 }
 
 /* Skills */
 .skills {
   position: relative;
-  background-color: palevioletred;
+  background-color: rgba(223, 227, 236, 0.5);
   margin: 0 auto;
   /* height: 70px; */
   /* margin: 50px auto;
@@ -174,7 +174,7 @@ header nav a#trigger::after {
 /* Career */
 .career {
   position: relative;
-  background-color: palevioletred;
+  background-color: rgba(223, 227, 236, 0.5);
   /* height: 70px; */
   margin: 50px auto;
   display: flex;
@@ -185,15 +185,14 @@ header nav a#trigger::after {
 /* Projects */
 
 .projects {
-  background-color: royalblue;
-  border-radius: 10px;
+  background-color: rgba(223, 227, 236, 0.5);
   position: relative;
   top:60px;
   /* max-width: 700px; */
   padding: 10px;
   margin: 0 auto;  
 }
-.projects .inner{
+.projects .inner{  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
