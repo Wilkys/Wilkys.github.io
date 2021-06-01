@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(221, 215, 215);
   font-size: 16px;
@@ -6,6 +10,7 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
   background:url('../images/xps-g2E2NQ5SWSU-unsplash.jpg') no-repeat right bottom fixed;
   background-size: cover;
+  position: relative;  
 }
 section {
   max-width: 768px;
@@ -88,6 +93,7 @@ header nav a#trigger::after {
   top:10px;
 }
 
+
 /** Desktop 화면 **/
 @media screen and (min-width:721px){
   header nav {
@@ -120,9 +126,10 @@ header nav a#trigger::after {
   header nav a#trigger {
     display:none;
   }
+  
+  
 
 }
-
 
 /* About */
 .about {
@@ -177,7 +184,7 @@ header nav a#trigger::after {
   border-radius: 10px;
   position: relative;
   top:60px;
-  max-width: 700px;
+  /* max-width: 700px; */
   padding: 10px;
   margin: 0 auto;  
 }
