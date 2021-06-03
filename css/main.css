@@ -1,13 +1,14 @@
-html {
-  scroll-behavior: smooth;
+* {
+  scroll-behavior: smooth;  
 }
 
 body {
-  color: rgb(221, 215, 215);
+  color: rgb(221, 215, 215);  
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  font-family: 'Nanum Gothic', sans-serif;
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Roboto', sans-serif;
   background:url('../images/xps-g2E2NQ5SWSU-unsplash.jpg') no-repeat right bottom fixed;
   background-size: cover;
 }
@@ -126,19 +127,17 @@ header nav a#trigger::after {
   }
   header nav a#trigger {
     display:none;
-  }
-  
-  
+  }  
 
 }
 
-/* About */
-.about {
+.myname {
   position: relative;
   background-color: rgba(223, 227, 236, 0.5);
-  height: 70px;
-  margin: 50px auto;
-  padding: 0;
+  width: 600px;
+  height: 170px;
+  margin: 150px auto;
+  padding: 80px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,28 +145,51 @@ header nav a#trigger::after {
   color:rgb(39, 36, 39);
 }
 
+/* About */
+.about {
+  position: relative;
+  background-color: rgba(223, 227, 236, 0.5);  
+  margin: 50px auto;  
+  /* display: flex;
+  justify-content: center; */
+  align-items: center;
+  font-size: 1.5em;
+  color:rgb(39, 36, 39);
+}
+.about h2 {
+  padding: 50px 50px 50px;
+  text-align: center;
+}
+.about p {
+  font-size: 13px;  
+}
+
 /* Skills */
 .skills {
   position: relative;
   background-color: rgba(223, 227, 236, 0.5);
   margin: 0 auto;
+  font-size: 1.5em;
+  color:rgb(39, 36, 39);
   /* height: 70px; */
   /* margin: 50px auto;
   display: flex;
   justify-content: center; */
 }
 .skills h2{
-  padding: 10px;
+  padding: 50px;
   display: flex;
   justify-content: center;
 }
 .skills .inner {
   display: flex;
-  justify-content: center;
+  justify-content: center;  
+
 }
 .skills .inner img {
   
   height: 70px;
+  padding: 6px;    
 }
 
 
@@ -175,10 +197,15 @@ header nav a#trigger::after {
 .career {
   position: relative;
   background-color: rgba(223, 227, 236, 0.5);
+  font-size: 1.5em;
+  color:rgb(39, 36, 39);
   /* height: 70px; */
   margin: 50px auto;
   display: flex;
   justify-content: center;
+}
+.career h2 {
+  padding: 50px;
 }
 
 
@@ -186,6 +213,8 @@ header nav a#trigger::after {
 
 .projects {
   background-color: rgba(223, 227, 236, 0.5);
+  font-size: 1.5em;
+  color:rgb(39, 36, 39);
   position: relative;
   top:60px;
   /* max-width: 700px; */
@@ -198,33 +227,49 @@ header nav a#trigger::after {
   justify-content: center;
 }
 .projects .inner h2 {
-  
 }
 .projects .inner .project_item {
-  background-color: orange;
+  background-color: rgba(204, 204, 202, 0.8);
   width: 190px;
   height: 250px;
   padding: 10px;
   margin: 10px;
   border: 1px solid #c8c8c8;
   border-radius: 5px;
-  box-sizing: border-box;     
+  box-sizing: border-box;  
+  overflow: hidden;     
 
 }
 .projects .inner .project_item a {
+  font-size: 0.7em;
   margin: 0 auto;
 }
+.projects .inner .project_item img {
+  width: 170px;
+  /* height: 190px; */
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;  
+  object-fit: cover;
+}
+
+
 
 /* Contact */
 #contact {
   position: relative;
-  background-color: palevioletred;
+  background-color: rgba(223, 227, 236, 0.5);
   /* height: 70px; */
   margin: 50px auto;
+  height: 500px;
   display: flex;
   justify-content: center;
 }
 #contact .inner {
   display: flex;
   justify-content: center;
+}
+#contact .inner p {
+  color: black;
 }
