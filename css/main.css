@@ -134,15 +134,12 @@ header nav a#trigger::after {
 .myname {
   position: relative;
   background-color: rgba(223, 227, 236, 0.5);
-  width: 780px;
-  height: 170px;
   margin: 150px auto;
   padding: 80px 50px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  box-sizing: border-box;  
   font-size: 3em;
   color:rgb(39, 36, 39);
+  
 }
 .myname h2{
 
@@ -204,8 +201,7 @@ header nav a#trigger::after {
   justify-content: center;  
 
 }
-.skillicons .inner img {
-  
+.skillicons .inner img {  
   height: 70px;
   padding: 6px;    
 }
