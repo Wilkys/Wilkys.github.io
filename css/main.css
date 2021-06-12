@@ -134,15 +134,21 @@ header nav a#trigger::after {
 .myname {
   position: relative;
   background-color: rgba(223, 227, 236, 0.5);
-  width: 600px;
+  width: 780px;
   height: 170px;
   margin: 150px auto;
   padding: 80px 50px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   font-size: 3em;
   color:rgb(39, 36, 39);
+}
+.myname h2{
+
+}
+.myname p {
+  font-size: 24px;
 }
 
 /* About */
