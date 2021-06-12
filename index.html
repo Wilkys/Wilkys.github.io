@@ -11,6 +11,17 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- gsap scroll script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js" integrity="sha512-kSI9CgGh60rJbNVeMJvfNX0UTKAq8LEOea/yKJQbFpIroxT7bf9/zUFXbnfsQP5F6xlOOHtCfBPgsE1ceiHnRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- google material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -22,13 +33,7 @@
             </li>
             <li>
               <a href="#about">About</a>              
-            </li>
-            <li>
-              <a href="#skills">Skills</a>              
-            </li>
-            <li>
-              <a href="#career">History</a>
-            </li>
+            </li>          
             <li>
               <a href="#project_list">Projects</a>
             </li>                    
@@ -42,7 +47,7 @@
     
     <!-- Name 섹션 -->
     <section class="myname">
-      <h2 id="myname">Front-end Developer,<i>Wijun Kim!</i></h2>
+      <h1 id="myname">Front-end Developer,<i>Wijun Kim!</i></h1>
          <p>There’s no late start!</p>
     </section>
 
@@ -54,13 +59,13 @@
       </div>
       <br />
       
-      <h3 class="history">학력:</h3>
+      <h3 class="sub_title">학력:</h3>
       <ul>
         <li>1999~2008: 충남대학교 항공우주공학과 학사/석사</li>
         <li>2018~2021: 한국방송통신대학교 컴퓨터과학과 재학 중</li>
       </ul>  
       <br />  
-      <h3 class="history">경력:</h3>
+      <h3 class="sub_title">이력:</h3>
       <ul>
         <li>2008.01~2019.09: 대한항공 항공우주사업본부 항공기 구조설계/사업관리</li>
         <li>2019.10~현재: 대한항공 항공우주사업본부 정보시스템(ERP 사용자지원. MES 기능 협의 및 FD 작성)</li>
@@ -68,71 +73,99 @@
 
       <br />
 
-      <h3 class="history">Skills</h3>
-      <div class="skills">
-        <span>Front-End:</span> HTML, CSS, SCSS, Javascript, React, Svelte <br />
-        <span>Back-End:</span> Django(Python), Oracle(SQL)<br />
-        <span>DevOps:</span> Git/Github, Netlify, Heroku, Linux <br />
-        <span>Sub Skills:</span> Flask(Python), Koa(Node.js), Jin(Golang) <br />
+      <h3 class="sub_title">Skills</h3>
+      <div class="inline_block">        
+        <div class="skills">
+          <h4>Front-End:</h4> 
+          <img src="./images/html5.png" alt="html5">HTML, 
+          <img src="./images/css.png" alt="CSS">CSS, 
+          <img src="./images/sass.png" alt="SCSS">SCSS, 
+          <img src="./images/js.png" alt="Javascript">Javascript, <br />
+
+          <img src="./images/react.png" alt="React">React, 
+          <img src="./images/svelte.png" alt="Svelte">Svelte
+        </div>
+        
+        <br />
+
+         <div class="skills">
+          <h4>Back-End:</h4> 
+          <img src="./images/django.png" alt="Python">Django(Python), 
+          <img src="./images/oracle.png" alt="Vue">Oracle(SQL)
+        </div>
+        
+        <br />        
+        
+        <div class="skills">
+          <h4>DevOps:</h4> 
+          <img src="./images/github.png" alt="CSS">Git/Github, 
+          <img src="./images/netlify.png" alt="CSS">Netlify, 
+          <img src="./images/heroku.png" alt="CSS">Heroku, 
+          <img src="./images/linux.png" alt="CSS">Linux 
+        </div>
+
+        <br />
+        
+        <div class="skills">
+          <h4>Sub Skills:</h4> 
+          <img src="./images/flask.png" alt="Golang">Flask(Python), 
+          <img src="./images/Koa.png" alt="Golang">Koa(Node.js), 
+          <img src="./images/gin.png" alt="Golang">Gin(Golang) 
+        </div>
+        <br />
       </div>
     </section>
 
-    <!-- Skill Icons 섹션 -->
-    <section class="skillicons">      
-      <div class="inner">
-        <img src="./images/html5.png" alt="html5">        
-        <img src="./images/js.png" alt="Javascript">
-        <img src="./images/css.png" alt="CSS">
-        <img src="./images/react.png" alt="React">
-        <img src="./images/vue.png" alt="Vue">
-        <img src="./images/svelte.png" alt="Svelte">
-        <img src="./images/python.png" alt="Python">
-        <img src="./images/golang.png" alt="Golang">
-      </div>
-    </section>
 
-
-    <!-- Project 섹션 --> 
+    <!--Toy Project 섹션 --> 
 
     <section class="projects">
-      <h2 id="project_list">Project list</h2>
+      <h2 id="project_list">Toy Projects</h2>
       <div class="inner">        
-        
-        <div class="project_item">          
-          <a href="https://wizardly-beaver-84a585.netlify.app">Project1 - Starbugs</a>
-          <img src="./images/starbugs.png">
-        </div>
-
-        
         <div class="project_item">
-          <a href="https://thirsty-kalam-341abe.netlify.app/">Project2 - Overwatch</a>
-          <img src="./images/overwatch.png">
+          <div class="image" ></div>
+          <a href="https://wizardly-beaver-84a585.netlify.app" target="_blank">Starbugs Front Page Clone</a>          
         </div>
 
         
         <div class="project_item">
-          <a href="https://compassionate-wescoff-4afe9b.netlify.app/">Project3 - Svelte Todo</a>
-        </div>
-
-       
-        <div class="project_item">
-          <a href="https://distracted-kepler-047b8e.netlify.app">Project4 - Webpack Template</a>
-        </div>
-
-        <div class="project_item">
-          <a href="https://seaofcalm-react-ex1.herokuapp.com/">Project5 - React Ex</a>
+          <div class="image" ></div>
+          <a href="https://thirsty-kalam-341abe.netlify.app/" target="_blank">React MyBook</a>
         </div>
 
         
+        <div class="project_item">
+          <div class="image" ></div>
+          <a href="https://compassionate-wescoff-4afe9b.netlify.app/" target="_blank">Svelte OMDb영화검색</a>
+        </div>
 
       </div>
     </section>
 
     <section id="contact">
-      <div class="inner">
-        <p>seaofcalm@gmail.com</p>
+      <div class="inner">  
+        <ul>
+          <li>            
+            <img src="./images/envelope-regular.svg" alt="email"> 
+            <span>seaofcalm@gmail.com</span>
+          </li>
+          
+          <li>
+            <img src="./images/phone-square-alt-solid.svg" alt="phone">
+            <span>(+82)10.3028.2283</span>
+          </li>          
+          <li>
+            <img src="./images/github-brands.svg" alt="github">
+            <a href="https://github.com/willy-kim/">https://github.com/willy-kim/</a>
+          </li> 
+        </ul>              
+        
       </div>
     </section>
+
+    <div id="to-top">
+      <div class="material-icons">arrow_upward</div>
+    </div>
 
 
     <script src="./js/jquery-2.2.4.min.js"></script>     
