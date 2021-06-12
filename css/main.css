@@ -166,12 +166,24 @@ header nav a#trigger::after {
   padding: 50px 50px 50px;
   text-align: center;
 }
-.about p {
+.about .description {
   font-size: 13px;  
 }
+.about .history {
+  font-size: 18px;  
+}
+.about li {
+  font-size: 13px;  
+}
+.about .skills {
+  font-size: 13px;
+}
+.about .skills span{
+  font-weight: bold;
+}
 
-/* Skills */
-.skills {
+/* Skill icons */
+.skillicons {
   position: relative;
   background-color: rgba(223, 227, 236, 0.5);
   margin: 0 auto;
@@ -182,36 +194,20 @@ header nav a#trigger::after {
   display: flex;
   justify-content: center; */
 }
-.skills h2{
+.skillicons h2{
   padding: 50px;
   display: flex;
   justify-content: center;
 }
-.skills .inner {
+.skillicons .inner {
   display: flex;
   justify-content: center;  
 
 }
-.skills .inner img {
+.skillicons .inner img {
   
   height: 70px;
   padding: 6px;    
-}
-
-
-/* Career */
-.career {
-  position: relative;
-  background-color: rgba(223, 227, 236, 0.5);
-  font-size: 1.5em;
-  color:rgb(39, 36, 39);
-  /* height: 70px; */
-  margin: 50px auto;
-  display: flex;
-  justify-content: center;
-}
-.career h2 {
-  padding: 50px;
 }
 
 
