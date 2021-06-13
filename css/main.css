@@ -13,6 +13,7 @@ body {
 }
 section {
   width: 1120px;
+  min-height: 800px;
   margin:0 auto;
   padding: 10px;
   border-radius: 4px;
@@ -87,7 +88,7 @@ header nav ul li {
   border-bottom: 1px solid #576979; 
 }
 header nav ul li a{
-  line-height: 50px;
+  /* line-height: 50px; */
 }
 header nav a#trigger {
   display:block;
@@ -130,6 +131,7 @@ header nav a#trigger::after {
     border-bottom: 0;
     border-right: 1px solid #576979;
     margin-right: -6px;
+    box-sizing: border-box;
   }
   header nav ul li:list-child{
     border-right: 0;
@@ -146,7 +148,7 @@ header nav a#trigger::after {
 
 .myname {
   position: relative;
-  background-color: rgba(223, 227, 236, 0.5);
+  /* background-color: rgba(223, 227, 236, 0.5); */
   margin: 150px auto;
   padding: 80px 150px;
   box-sizing: border-box;  
@@ -162,7 +164,7 @@ header nav a#trigger::after {
 /* About */
 .about {
   position: relative;
-  background-color: rgba(223, 227, 236, 0.5);  
+  /* background-color: rgba(223, 227, 236, 0.5);   */
   margin: 50px auto;  
   /* display: flex;
   justify-content: center; */
@@ -208,7 +210,7 @@ header nav a#trigger::after {
 /* Projects */
 
 .projects {
-  background-color: rgba(223, 227, 236, 0.5);
+  /* background-color: rgba(223, 227, 236, 0.5); */
   position: relative;
   top:60px; 
   margin: 50px auto;  
@@ -230,15 +232,15 @@ header nav a#trigger::after {
   position: relative;    
 }
 .projects .inner .project_item .image {
-  background-color: rgba(204, 204, 202, 0.8);
-  width: 300px;
+  /* background-color: rgba(204, 204, 202, 0.8); */
+  width: 330px;
   height: 250px;
   margin: 10px;
   border: 1px solid #c8c8c8;
   border-radius: 5px;
   box-sizing: border-box;  
   overflow: hidden; 
-  background-size: 300px;
+  background-size: 330px;
   background-repeat: no-repeat;    
   display: flex;  
   position: relative;  
@@ -286,24 +288,29 @@ header nav a#trigger::after {
 
 
 /* Contact */
-#contact {
+.contacts {
   position: relative;
-  background-color: rgba(223, 227, 236, 0.5);
+  /* background-color: rgba(223, 227, 236, 0.5); */
   /* height: 70px; */
   margin: 120px auto;
-  padding: 30px 0 30px;
+  padding: 30px 0 30px;  
+}
+.contacts h2 {
+  font-weight: 700;
+  padding: 50px 0;
+  color:rgb(39, 36, 39);
+  text-align: center;
+}
+.contacts .inner {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
-#contact .inner {
-  display: flex;
-  justify-content: center;
-}
-#contact .inner ul li {
+.contacts .inner ul li {
   color: black;
   
 }
-#contact .inner ul li img{
+.contacts .inner ul li img{
   width: 30px;
   background-color: #CCC;
   padding: 3px;
@@ -312,11 +319,11 @@ header nav a#trigger::after {
   vertical-align: middle;
   transition: .5s;
 }
-#contact .inner ul li a{
+.contacts .inner ul li a{
   color: black;
   text-shadow:none;
 }
-#contact .inner ul li img:hover {
+.contacts .inner ul li img:hover {
   background-color:rgb(110, 88, 235)
 }
 #to-top {
