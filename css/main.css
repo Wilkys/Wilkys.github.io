@@ -1,6 +1,7 @@
 * {
   scroll-behavior: smooth;  
   font-size: 16px;
+  color:#2a2725;
 }
 
 body {
@@ -75,7 +76,7 @@ header {
 header nav {
   width: 100%;
   height: auto;
-  background: #34495e;  
+  background: #34515e;  
 }
 header nav ul {
   display: none;
@@ -149,10 +150,11 @@ header nav a#trigger::after {
 .myname {
   position: relative;
   /* background-color: rgba(223, 227, 236, 0.5); */
-  margin: 150px auto;
-  padding: 80px 150px;
+  margin: 100px auto;
+  padding: 80px 100px;
   box-sizing: border-box;  
   color:rgb(39, 36, 39);
+  font-weight: 700;
   text-align: center;
   
 }
@@ -160,6 +162,28 @@ header nav a#trigger::after {
 .myname p {
   font-size: 1.5rem;
 }
+.myname .photos {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;  
+}
+.myname .photos .photo {
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;  
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 24px solid white;  
+}
+.myname .photos .photo:first-child {
+  margin-right: -80px;
+} 
+.myname .photos .photo img {
+  width: 100%;
+  height: 100%;  
+}
+
 
 /* About */
 .about {
@@ -172,12 +196,15 @@ header nav a#trigger::after {
   color:rgb(39, 36, 39);
 }
 .about h2 {
-  padding: 50px 0 50px;
+  padding: 80px 0 50px;
   text-align: center;
   font-weight: 700;
 }
 .about .description {
   font-size: 13px;  
+}
+.about .description strong {
+  font-weight: 700;
 }
 .about .sub_title {
   font-size: 18px;  
@@ -218,11 +245,12 @@ header nav a#trigger::after {
 }
 .projects h2 {
   font-weight: 700;
-  padding: 50px 0;
+  padding: 80px 0;
   color:rgb(39, 36, 39);
   text-align: center;
 }
-.projects .inner{  
+.projects .inner{
+  margin-top: 80px;  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -233,14 +261,14 @@ header nav a#trigger::after {
 }
 .projects .inner .project_item .image {
   /* background-color: rgba(204, 204, 202, 0.8); */
-  width: 330px;
-  height: 250px;
-  margin: 10px;
+  width: 250px;
+  height: 190px;
+  margin: 5px;
   border: 1px solid #c8c8c8;
   border-radius: 5px;
   box-sizing: border-box;  
   overflow: hidden; 
-  background-size: 330px;
+  background-size: 250px;
   background-repeat: no-repeat;    
   display: flex;  
   position: relative;  
@@ -257,7 +285,7 @@ header nav a#trigger::after {
   bottom: 0;
   right:0;
   color:rgb(162, 114, 250);
-  font-size: 24px; 
+  font-size: 18px; 
   transition: 1.5s;
 }
 
@@ -275,13 +303,16 @@ header nav a#trigger::after {
    
 }
 .projects .inner .project_item:nth-child(1) .image {
-  background-image: url('../images/starbugs.png');    
+  background-image: url('../images/willog.jpg');    
 }
 .projects .inner .project_item:nth-child(2) .image {
   background-image: url('../images/mybook.jpg');
 }
 .projects .inner .project_item:nth-child(3) .image {
   background-image: url('../images/svelte_omdb.jpg');
+}
+.projects .inner .project_item:nth-child(4) .image {
+  background-image: url('../images/starbugs.png');    
 }
 
 
@@ -297,8 +328,9 @@ header nav a#trigger::after {
 }
 .contacts h2 {
   font-weight: 700;
-  padding: 50px 0;
+  padding: 80px 0 40px;
   color:rgb(39, 36, 39);
+  /* color: cyan; */
   text-align: center;
 }
 .contacts .inner {
