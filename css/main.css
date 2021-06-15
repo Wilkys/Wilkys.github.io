@@ -374,3 +374,6 @@ header nav a#trigger::after {
   right: 30px;
   z-index: 9;
 }
+#to-top .material-icons{
+  color:#fff;
+}
