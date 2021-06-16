@@ -15,7 +15,7 @@ window.addEventListener('scroll', _.throttle(function() {
 }, 300));
 
 toTopEl.addEventListener('click', function () {
-  gsap.to(window, .4, {
+  gsap.to(window, .04, {
     scrollTo: 0
   });
 });

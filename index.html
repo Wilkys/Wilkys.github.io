@@ -11,6 +11,8 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     
     <!-- lodash -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -30,13 +32,13 @@
           <ul>
             <li>
               <a href="/">Home</a>
+            </li>                    
+            <li>
+              <a href="#project_list">Projects</a>
             </li>
             <li>
               <a href="#about">About</a>              
-            </li>          
-            <li>
-              <a href="#project_list">Projects</a>
-            </li>                    
+            </li>                      
             <li>
               <a href="#contact">Contact</a>
             </li>            
@@ -47,10 +49,9 @@
     
     <!-- Name 섹션 -->
     <section class="myname">
-      <h1 id="myname">FRONT-END DEVELOPER,&nbsp<i>Wijun Kim!</i></h1>
-      <p>There’s no late start!</p>
+      <h1 id="myname">FRONT-END DEVELOPER,&nbsp<i>WIJUN KIM</i></h1>      
       <div class="photos">
-        <div class="photo">
+        <div class="photo">          
           <img src="/images/w.jpg" alt="W">
         </div>
         <div class="photo">
@@ -58,14 +59,128 @@
         </div>
       </div>
 
+      <div class="inline_block">        
+        <div class="skills">
+          <h4>Front-End:</h4> 
+          <img src="./images/html5.png" alt="html5">HTML, 
+          <img src="./images/css.png" alt="CSS">CSS, 
+          <img src="./images/sass.png" alt="SCSS">SCSS, 
+          <img src="./images/js.png" alt="Javascript">Javascript, <br />
+
+          <img src="./images/react.png" alt="React">React, 
+          <img src="./images/svelte.png" alt="Svelte">Svelte
+        </div>        
+      
+         <div class="skills">
+          <h4>Back-End:</h4> 
+          <img src="./images/Koa.png" alt="Golang">Koa(Node.js), 
+          <img src="./images/django.png" alt="Python">Django(Python), 
+          <img src="./images/oracle.png" alt="Vue">Oracle(SQL)
+        </div>
+                      
+        <div class="skills">
+          <h4>DevOps:</h4> 
+          <img src="./images/github.png" alt="CSS">Git/Github, 
+          <img src="./images/netlify.png" alt="CSS">Netlify, 
+          <img src="./images/heroku.png" alt="CSS">Heroku, 
+          <img src="./images/linux.png" alt="CSS">Linux 
+        </div>
+        
+        <div class="skills">
+          <h4>Sub Skills:</h4>           
+          <img src="./images/flask.png" alt="Golang">Flask(Python),           
+          <img src="./images/gin.png" alt="Golang">Gin(Golang) 
+        </div>
+        <br />
+      </div>
+
     </section>
 
+    <div class="border"></div>
+    <!--Toy Project 섹션 --> 
+
+    <section class="projects">
+      <h2 id="project_list">Projects</h2>
+      <div class="inner">        
+        <div class="project_item">
+          <div class="image" ></div>
+          <a href="https://tender-elion-c04362.netlify.app/" target="_blank">
+            <h4>Willog</h4><br/>
+            <p>Front-End는 React로 구성하여 Github-Netlify에 배포하였으며
+               Back-End는 Koa로 구성하여 Heroku에서 서비스. MongoDB를 활용하여 로그인 기능 및
+               블로그 기능 구현
+            </p>
+          </a>          
+        </div>        
+        <div class="project_item">
+          <div class="image" ></div>
+          <a href="https://suspicious-kirch-80ddd0.netlify.app" target="_blank">
+            <h4>My Book</h4><br/>
+            <p>React Typescript로 구성된 나의 책장 앱. Github-Netlify에 배포하였으며, 
+              Back-End는 특정 강의의 강사가 제공하는 Server로 구성.</p>
+          </a>
+        </div>
+        
+        <div class="project_item">
+          <div class="image" ></div>
+          <a href="https://competent-clarke-81b3fe.netlify.app/" target="_blank">
+           <br />
+            <h4>OMDb영화검색</h4><br/>
+            <p>
+              Svelte로 구성된 영화정보 검색 앱. OMDb API 활용하였으며, Github-Netlify에 배포 .
+            </p>
+          </a>
+        </div>
+
+        <div class="project_item">
+          <div class="image" ></div>
+          <a href="https://wizardly-beaver-84a585.netlify.app" target="_blank">
+            <br />
+            <h4>Starbugs Clone</h4><br/>
+            <p>HTML & CSS, Javascript로 구성한 Starbugs 랜딩페이지 클론. lodash, gsap 등 javascript 라이브러리 활용. 
+              Github-Netlify에 배포.
+            </p>
+          </a>          
+        </div>
+
+        <div class="project_item">
+          <div class="image" ></div>
+          <a href="https://wijkim.pythonanywhere.com/" target="_blank">
+            <h4>Django Blog</h4><br/>
+            <p>Django를 활용한 Blog앱. 기본 제공되는 litesql Database를 이용하여 로그인 및 세션 유지 기능을 구현하였으며, 
+              블로그, Photolog 기능 구현. pythonanywhere에 배포.</p>
+          </a>          
+        </div>
+
+      </div>
+    </section>
+
+    <div class="border"></div>
     <!-- About 섹션 -->
     <section class="about">
       <h2 id="about">About Me</h2>      
       <div class="description">
-        <strong>늦은 시작이란 없다.</strong> Front-End 분야로의 진입은 늦었지만, 다양한 경험을 바탕으로 폭넓은 사고하는 법을 배웠습니다. <br />
-        고객과, 동료와의 커뮤니케이션을 무엇보다도 중요하게 생각하는 개발자 김위준입니다.
+        <div class="abstract">Front-End 분야로의 진입은 늦었지만, 다양한 경험을 바탕으로 폭넓은 사고하는 법을 배웠습니다. <br />
+          고객과, 동료와의 커뮤니케이션을 무엇보다도 중요하게 생각하는 개발자 김위준입니다. 
+        </div>
+        <br/>
+        <br/>
+        <p>항공우주공학과란 다소 프로그래밍과 동떨어진 분야를 전공하고 일반 회사원생활을 하고 있지만, 
+          대학/대학원때 Linux에 빠져 지낸 것을 계기로 C/C++을 활용한 영상처리논문, C#/Golang 윈도우 어플리케이션 제작, 유니티 게임제작 등 
+          코딩 활동을 계속 이어나갔습니다. C/C++, Java, C#, Python, Golang등 다양한 언어를 익혔으나 이론이 부족함을 느껴
+          2018년부터 방송통신대에 입학하여 공부를 이어나가고 있습니다.</p>
+        <br/>
+        <p>다양한 언어를 익히면서 어느 분야/어떤 언어를 공부해야할까 고민을 많이 했는데, 아이러니하게도 Backend인 Django(Python)을 공부하며 
+          나의 서비스를 배포한다는 즐거움을 알게되었습니다. 그러나 Backend는 여러 언어가 각자의 특성을 갖고 통일되지 않아 제각각인 반면
+          Front-End는 HTML/CSS/Javascript로 통일되어있는 것을 보고 매력을 느꼈습니다. 그리고 가장 빨리 발전하는 분야이기도 하고, 무엇보다도
+          눈에 보이는 결과물이 바로바로 나타나는 것이 너무나 마음에 들어 현재는 완전히 프론트엔드 분야에 빠져들었습니다.</p>
+        <br />
+        <p>
+          현재는 회사 ERP 시스템 지원부서에 있습니다. 드물게 Visual Basic으로 작성된 Legacy 프로그램을 수정하기도 하지만 
+          주로 SQL Query로 데이터 제공, ERP에 기능 추가가 필요한 경우 현업 담당자와 협의하여 상세 요구서를 작성하고 후속부서 송부하는 일, 
+          신규 생산 시스템의 FD를 작성하는 일 등을 하고 있습니다. 고객의 요구사항을 정확히 파악하고 동료와의 원활한 커뮤니케이션을 이끌어낼 수 있습니다. 
+        </p>
+
       </div>
       <br />
       
@@ -81,89 +196,18 @@
         <li>2019.10~현재: 대한항공 항공우주사업본부 정보시스템(ERP 사용자지원. MES 기능 협의 및 FD 작성)</li>
       </ul>
 
-      <br />
-
-      <h3 class="sub_title">Skills</h3>
-      <div class="inline_block">        
-        <div class="skills">
-          <h4>Front-End:</h4> 
-          <img src="./images/html5.png" alt="html5">HTML, 
-          <img src="./images/css.png" alt="CSS">CSS, 
-          <img src="./images/sass.png" alt="SCSS">SCSS, 
-          <img src="./images/js.png" alt="Javascript">Javascript, <br />
-
-          <img src="./images/react.png" alt="React">React, 
-          <img src="./images/svelte.png" alt="Svelte">Svelte
-        </div>
-        
-        <br />
-
-         <div class="skills">
-          <h4>Back-End:</h4> 
-          <img src="./images/django.png" alt="Python">Django(Python), 
-          <img src="./images/oracle.png" alt="Vue">Oracle(SQL)
-        </div>
-        
-        <br />        
-        
-        <div class="skills">
-          <h4>DevOps:</h4> 
-          <img src="./images/github.png" alt="CSS">Git/Github, 
-          <img src="./images/netlify.png" alt="CSS">Netlify, 
-          <img src="./images/heroku.png" alt="CSS">Heroku, 
-          <img src="./images/linux.png" alt="CSS">Linux 
-        </div>
-
-        <br />
-        
-        <div class="skills">
-          <h4>Sub Skills:</h4> 
-          <img src="./images/flask.png" alt="Golang">Flask(Python), 
-          <img src="./images/Koa.png" alt="Golang">Koa(Node.js), 
-          <img src="./images/gin.png" alt="Golang">Gin(Golang) 
-        </div>
-        <br />
-      </div>
     </section>
 
-
-    <!--Toy Project 섹션 --> 
-
-    <section class="projects">
-      <h2 id="project_list">Toy Projects</h2>
-      <div class="inner">        
-        <div class="project_item">
-          <div class="image" ></div>
-          <a href="https://tender-elion-c04362.netlify.app/" target="_blank">React,<br />Willog</a>          
-        </div>
-
-        
-        <div class="project_item">
-          <div class="image" ></div>
-          <a href="https://suspicious-kirch-80ddd0.netlify.app" target="_blank">React,<br />MyBook</a>
-        </div>
-
-        
-        <div class="project_item">
-          <div class="image" ></div>
-          <a href="https://competent-clarke-81b3fe.netlify.app/" target="_blank">Svelte,<br />OMDb영화검색</a>
-        </div>
-
-        <div class="project_item">
-          <div class="image" ></div>
-          <a href="https://wizardly-beaver-84a585.netlify.app" target="_blank">HTML & CSS,<br />Starbugs Clone</a>          
-        </div>
-
-      </div>
-    </section>
-
+    <div class="border"></div>
+    
     <section class="contacts">
       <h2 id="contact">Contact</h2>
       <div class="inner">  
         <ul>
           <li>            
             <img src="./images/envelope-regular.svg" alt="email"> 
-            <span>seaofcalm@gmail.com</span>
+            <a href="mailto:seaofcalm@gmail.com" target="_top">seaofcalm@gmail.com</a>
+            
           </li>
           
           <li>
@@ -172,7 +216,7 @@
           </li>          
           <li>
             <img src="./images/github-brands.svg" alt="github">
-            <a href="https://github.com/willy-kim/">https://github.com/willy-kim/</a>
+            <a href="https://github.com/willy-kim/" target="_blank">https://github.com/willy-kim/</a>
           </li> 
         </ul>              
         
