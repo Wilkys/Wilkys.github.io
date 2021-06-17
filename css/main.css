@@ -330,7 +330,7 @@ header nav a#trigger::after {
   font-weight: 700;
 }
 .about .description {
-  font-size: 13px; 
+  font-size: 24px; 
   width: 700px; 
   margin: 0 auto;
 }
@@ -340,12 +340,32 @@ header nav a#trigger::after {
   text-align: center;  
 }
 .about .description .sub_title {
-  font-size: 18px;  
+  font-size: 24px;  
   
 }
 .about .description ul li {
-  font-size: 13px;    
+  font-size: 20px;    
 }
+@media screen and (min-width: 721px){  
+  .about .description {
+    font-size: 13px; 
+    width: 700px; 
+    margin: 0 auto;
+  }
+  .about .description .abstract {
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;  
+  }
+  .about .description .sub_title {
+    font-size: 18px;  
+    
+  }
+  .about .description ul li {
+    font-size: 13px;    
+  }
+}
+
 
 
 /* Contact */
