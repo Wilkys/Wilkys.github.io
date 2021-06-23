@@ -239,6 +239,11 @@ header nav a#trigger::after {
     justify-content: center;
     width: 1000px;
   }
+  .projects .inner .project_item .contents {
+    width: 500px;
+    text-shadow: none;
+    font-size: 20px;
+  }
 }
 .projects .inner .project_item {
   position: relative;
