@@ -360,6 +360,7 @@ header nav a#trigger::after {
 }
 .about .description p {
   font-size: 24px;
+  color: #444;
 }
 .about .description p span {
   font-weight: 700;
@@ -382,9 +383,13 @@ header nav a#trigger::after {
   .about .description .sub_title {
     font-size: 18px;
   }
+  .about .description p {
+    font-size: 20px;
+    color: #444;
+  }
   .about .description p span {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
   }
   .about .description ul li {
     font-size: 18px;
