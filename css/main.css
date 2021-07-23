@@ -239,24 +239,38 @@ header nav a#trigger::after {
     justify-content: center;
     width: 1000px;
   }
-  .projects .inner .project_item .contents {
-    width: 500px;
+  .projects .inner .project_item a {
+    display: flex;
+  }
+  .projects .inner .project_item a .image {
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+  }
+  .projects .inner .project_item a .contents {
+    width: 500px; 
     text-shadow: none;
     font-size: 20px;
+    padding: 15px;
+    box-sizing: border-box;
   }
+}
+.projects .inner {
+  display: flex;
+  justify-content: center;
 }
 .projects .inner .project_item {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 10px;
+  margin: 10px 10px 30px;
   cursor: pointer;
 }
-.projects .inner .project_item .image {
+.projects .inner .project_item a .image {
   /* background-color: rgba(204, 204, 202, 0.8); */
-  width: 300px;
-  height: 250px;
+  width: 400px;
+  height: 300px;
   margin: 5px;
   border: 1px solid #c8c8c8;
   border-radius: 3px;
@@ -288,11 +302,7 @@ header nav a#trigger::after {
 .projects .inner .project_item:nth-child(6) .image {
   background-image: url("../images/pyblog.png");
 }
-.projects .inner .project_item a {
-  margin-left: 10px;
-  text-shadow: none;
-}
-.projects .inner .project_item .contents {
+.projects .inner .project_item a .contents {
   width: 500px;
   text-shadow: none;
   font-size: 20px;
