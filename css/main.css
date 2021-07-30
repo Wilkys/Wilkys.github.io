@@ -285,21 +285,24 @@ header nav a#trigger::after {
   border: 1px solid #ccc;
 }
 .projects .inner .project_item:nth-child(1) .image {
-  background-image: url("../images/willys.jpg");
+  background-image: url("../images/gatsby.png");
 }
 .projects .inner .project_item:nth-child(2) .image {
-  background-image: url("../images/mybook.jpg");
+  background-image: url("../images/willys.jpg");
 }
 .projects .inner .project_item:nth-child(3) .image {
-  background-image: url("../images/willog.jpg");
+  background-image: url("../images/mybook.jpg");
 }
 .projects .inner .project_item:nth-child(4) .image {
-  background-image: url("../images/svelte_omdb.jpg");
+  background-image: url("../images/willog.jpg");
 }
 .projects .inner .project_item:nth-child(5) .image {
-  background-image: url("../images/starbugs.png");
+  background-image: url("../images/svelte_omdb.jpg");
 }
 .projects .inner .project_item:nth-child(6) .image {
+  background-image: url("../images/starbugs.png");
+}
+.projects .inner .project_item:nth-child(7) .image {
   background-image: url("../images/pyblog.png");
 }
 .projects .inner .project_item a .contents {
