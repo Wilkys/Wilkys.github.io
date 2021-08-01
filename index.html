@@ -53,30 +53,36 @@
     <script defer src="./js/main.js"></script>
   </head>
   <body>
+
+    <div class="background"></div>
+    
     <!-- HEADER -->
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
+    <div class="header">
+      <div class="inner">        
+        <div class="home">
+          <a href="/">WIJUN's Portfolio</a>
+        </div>
+        <div class="menu">               
+          <div class="menu_el">
+            <a href="#skills">Skills</a>
+          </div>
+          <div class="menu_el">
+            <a href="#project_list">Archiving</a>
+          </div>
+          <div class="menu_el">
             <a href="#project_list">Projects</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+          </div>
+          <div class="menu_el">
+            <a href="#about">About Me</a>
+          </div>          
+        </div>
         <a href="#" id="trigger">MENU</a>
-      </nav>
-    </header>
+      </div>
+    </div>
 
     <!-- Name 섹션 -->
     <section class="myname">
-      <h1 id="myname">FRONT-END DEVELOPER,&nbsp<i>WIJUN KIM</i></h1>
+      <h1 id="myname">FRONT-END DEVELOPER,<br><i>WIJUN KIM</i></h1>
       <div class="photos">
         <div class="photo">
           <img src="/images/w.jpg" alt="W" />
@@ -87,6 +93,28 @@
       </div>
 
       <div class="inline_block">
+        <div>
+          <span class="material-icons">face</span><span>이름: 김위준</span>
+        </div>        
+        <div>
+          <span class="material-icons">email</span><span>이메일: seaofcalm@gmail.com</span>
+        </div>
+        <div>
+          <span class="material-icons">home</span><span>거주지: 부산광역시 북구</span>
+        </div>
+        <div>
+          <span class="material-icons">school</span><span>학력: 방송통신대학교 컴퓨터과학과 (4학년 재학 중)</span>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="border"></div>
+
+    <!-- Skills 섹션-->
+    <section class="skills">
+      <h2 id="skills">Skills</h2>
+      <div class="inline_block">
         <div class="skills">
           <h4>Front-End:</h4>
           <img src="./images/html5.png" alt="html5" />HTML,
@@ -94,7 +122,8 @@
           <img src="./images/sass.png" alt="SCSS" />SCSS,
           <img src="./images/js.png" alt="Javascript" />JavaScript,
           <img src="./images/react.png" alt="React" />React,&nbsp;
-          <img src="./images/nextjs.png" alt="React" />Next,
+          <img src="./images/nextjs.png" alt="Next" />Next,
+          <img src="./images/gatsby_icon.png" alt="Gatsby" />Gatsby,
           <img src="./images/svelte.png" alt="Svelte" />Svelte
         </div>
 
@@ -120,9 +149,10 @@
         </div>
         <br />
       </div>
-    </section>
+  </section>
 
-    <div class="border"></div>
+  <div class="border"></div>
+
     <!--Toy Project 섹션 -->
 
     <section class="projects">      
