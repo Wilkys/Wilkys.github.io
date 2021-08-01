@@ -260,25 +260,10 @@ header nav a#trigger::after {
 .myname .inline_block{
   max-width: 1100px;
   margin: 0 auto;  
-  padding: 100px;
-
-  display: flex;
-  justify-content: space-between;
+  top: 500px;
 }
-.myname .inline_block .el{
-  margin: 10px;
-}
-.myname .inline_block .el span{
+.myname .inline_block span{
   font-size: 24px;
-}
-.myname .inline_block .el p{
-  font-size: 18px;
-}
-.myname .inline_block .el a{
-  font-size: 18px;
-  color: black;
-  text-shadow:none;
-  text-decoration: none;
 }
 
 .skill_group {
