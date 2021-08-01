@@ -133,7 +133,7 @@ header nav a#trigger::after {
     position: absolute;
     top: -20px;
     width: 100%;
-    height: 800px;
+    height: 700px;
   }
   .background::after{
     content: "";
@@ -222,11 +222,11 @@ header nav a#trigger::after {
 .myname .photos .photo {
   flex-shrink: 0;
   width: 300px;
-  height: 300px;
+  height: 270px;
   overflow: hidden;
   box-sizing: border-box;
   border-radius: 50%;
-  border: 24px solid white;
+  border: 2px dashed white;
 }
 .myname .photos .photo:first-child {
   margin-right: -80px;
@@ -240,7 +240,7 @@ header nav a#trigger::after {
   margin: 0 auto;
   position: relative;
   max-width: 700px;
-  height: 300px;
+  height: 240px;
   text-align: center;
   word-break: keep-all;
   padding: 30px 0;
@@ -249,13 +249,21 @@ header nav a#trigger::after {
   font-size: 20px;
   /* background: yellow; */
 }
+.myname .inline_block{
+  max-width: 1100px;
+  margin: 0 auto;  
+}
+.myname .inline_block span{
+  font-size: 24px;
+}
 
 .skill_group {
-  background-color: rgba(194, 203, 224, 0.5);
+  /* background-color: rgba(194, 203, 224, 0.5); */
   position: relative;
   margin: 0 auto;
   padding: 20px 0 60px;
   align-items: center;
+  border: 1px dashed lightgray;
 }
 .skill_group h2 {
   font-weight: 700;
@@ -278,9 +286,9 @@ header nav a#trigger::after {
   flex-shrink:0;
   flex-wrap: wrap;
 
-  font-size: 1.4rem;
+  font-size: 1.0rem;
   font-weight: 400;
-  line-height: 3rem;
+  /* line-height: 3rem; */
   /* margin: 4px 0; */
   /* background-color: rgb(180, 248, 248); */
   width: 97%;
@@ -473,7 +481,8 @@ header nav a#trigger::after {
   position: relative;
   padding: 20px 0 60px;
   color: rgb(39, 36, 39);
-  background-color:rgb(221, 215, 215)
+  border: 1px dashed lightgray;
+  /* background-color:rgb(221, 215, 215) */
 }
 .about h2 {
   padding: 80px 0 50px;
