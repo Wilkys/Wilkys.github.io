@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   /* font-family: 'Nanum Gothic', sans-serif; */
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   background-size: cover;
 }
 section {
@@ -202,7 +202,8 @@ header nav a#trigger::after {
   padding: 120px 100px 20px;
   box-sizing: border-box;
   color: rgb(39, 36, 39);
-  font-weight: 700;
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
   text-align: center;
 }
 .myname .inline_block {
@@ -216,11 +217,12 @@ header nav a#trigger::after {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  /* background: cyan; */
 }
 .myname .photos .photo {
   flex-shrink: 0;
-  width: 260px;
-  height: 260px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
   box-sizing: border-box;
   border-radius: 50%;
@@ -234,38 +236,98 @@ header nav a#trigger::after {
   height: 100%;
 }
 
+.myname .desc {
+  margin: 0 auto;
+  position: relative;
+  max-width: 700px;
+  height: 300px;
+  text-align: center;
+  word-break: keep-all;
+  padding: 30px 0;
 
-.skills {
-  /* background-color: rgba(223, 227, 236, 0.5); */
+  color: #333;
+  font-size: 20px;
+  /* background: yellow; */
+}
+
+.skill_group {
+  background-color: rgba(194, 203, 224, 0.5);
   position: relative;
   margin: 0 auto;
   padding: 20px 0 60px;
   align-items: center;
 }
-.skills h2 {
+.skill_group h2 {
   font-weight: 700;
   padding: 80px 0 50px;
   color: rgb(39, 36, 39);
   text-align: center;
 }
-
-.skills .inline_block .skills {
+.skill_group .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  /* background-color: gray; */
+  border-radius: 10px;
+  padding: 5px;
+}
+.skill_group .inner .skills {
   display: flex;
   align-items: center;
+  flex-shrink:0;
+  flex-wrap: wrap;
+
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 4rem;
+  line-height: 3rem;
   /* margin: 4px 0; */
+  /* background-color: rgb(180, 248, 248); */
+  width: 97%;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  box-sizing: border-box;
 }
-.skills .inline_block .skills:nth-child(4) {
+.skill_group .inner .skills:nth-child(4) {
   color: #878787;
 }
-.skills .inline_block .skills:nth-child(4) h4 {
+.skill_group .inner .skills:nth-child(4) h4 {
   color: #878787;
 }
-.skills .inline_block .skills img {
+
+.skill_group .inner .skills h4{
+  text-decoration: underline;
+}
+.skill_group .inner .skills .contents {
+  width: 100%;
+  display: flex;
+  flex-shrink:0;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+.skill_group .inner .skills .contents .el{
+  display: flex;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(159, 193, 241);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+.skill_group .inner .skills .contents .el img {
+  display: inline-block;
   height: 30px;
-  padding: 6px;
+  /* padding: 6px; */
+  margin: auto;
+  padding:0;
+}
+.skill_group .inner .skills .contents .el span{
+  display: block;
+  width: 60%;
 }
 
 /* Projects */
@@ -276,6 +338,7 @@ header nav a#trigger::after {
   margin: 0 auto;
   padding: 20px 0 60px;
   align-items: center;
+  border: 1px dashed lightgray;
 }
 .projects h2 {
   font-weight: 700;
@@ -410,6 +473,7 @@ header nav a#trigger::after {
   position: relative;
   padding: 20px 0 60px;
   color: rgb(39, 36, 39);
+  background-color:rgb(221, 215, 215)
 }
 .about h2 {
   padding: 80px 0 50px;

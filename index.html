@@ -10,18 +10,17 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
 
-    <title>Do what you want!</title>
+    <title>Willy's Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- lodash -->
     <script
@@ -82,7 +81,7 @@
 
     <!-- Name 섹션 -->
     <section class="myname">
-      <h1 id="myname">FRONT-END DEVELOPER,<br><i>WIJUN KIM</i></h1>
+      <!-- <h1 id="myname">Wijun's Portfolio</h1> -->
       <div class="photos">
         <div class="photo">
           <img src="/images/w.jpg" alt="W" />
@@ -90,6 +89,10 @@
         <div class="photo">
           <img src="/images/me.jpg" alt="" />
         </div>
+      </div>
+      <div class="desc">
+        '배우고자 하는 사람은 언제나 청춘이다' 라는 말이 있습니다. 끊임없이 배우고, 새로운 것을 시도하는 개발자,
+        그러면서도 좀 더 완성도 높은 코드 작성을 위해 연구하는 개발자 김위준입니다.
       </div>
 
       <div class="inline_block">
@@ -111,41 +114,49 @@
 
     <div class="border"></div>
 
-    <!-- Skills 섹션-->
-    <section class="skills">
+    <!--Skills-->
+    <section class="skill_group">
       <h2 id="skills">Skills</h2>
-      <div class="inline_block">
+      <div class="inner">
         <div class="skills">
-          <h4>Front-End:</h4>
-          <img src="./images/html5.png" alt="html5" />HTML,
-          <img src="./images/css.png" alt="CSS" />CSS,
-          <img src="./images/sass.png" alt="SCSS" />SCSS,
-          <img src="./images/js.png" alt="Javascript" />JavaScript,
-          <img src="./images/react.png" alt="React" />React,&nbsp;
-          <img src="./images/nextjs.png" alt="Next" />Next,
-          <img src="./images/gatsby_icon.png" alt="Gatsby" />Gatsby,
-          <img src="./images/svelte.png" alt="Svelte" />Svelte
+          <h4>Front-End</h4>
+          <div class="contents">            
+            <div class="el"><img src="./images/html5.png" alt="html5" /><span>HTML</span></div>
+            <div class="el"><img src="./images/css.png" alt="CSS" /><span>CSS</span></div>
+            <div class="el"><img src="./images/sass.png" alt="SCSS" /><span>SCSS</span></div>
+            <div class="el"><img src="./images/js.png" alt="Javascript" /><span>JavaScript</span></div>
+            <div class="el"><img src="./images/react.png" alt="React" /><span>React</span>&nbsp;</div>
+            <div class="el"><img src="./images/nextjs.png" alt="Next" /><span>Next</span></div>
+            <div class="el"><img src="./images/gatsby-icon.png" alt="Gatsby" /><span>Gatsby</span></div>
+          </div>
         </div>
 
         <div class="skills">
-          <h4>Back-End:</h4>
-          <img src="./images/Koa.png" alt="Golang" />Koa(Node.js),
-          <img src="./images/django.png" alt="Python" />Django(Python),
-          <img src="./images/firebase.png" alt="firebase" />Firebase
+          <h4>Back-End</h4>
+          <div class="contents">
+            <div class="el"><img src="./images/Koa.png" alt="Koa" /><span>Koa</span></div>
+            <div class="el"><img src="./images/django.png" alt="Python" /><span>Django</span></div>
+            <div class="el"><img src="./images/firebase.png" alt="firebase" /><span>Firebase</span></div>
+          </div>
         </div>
 
         <div class="skills">
-          <h4>DevOps:</h4>
-          <img src="./images/github.png" alt="CSS" />Git/Github,
-          <img src="./images/netlify.png" alt="CSS" />Netlify,
-          <img src="./images/heroku.png" alt="CSS" />Heroku          
+          <h4>DevOps</h4>
+          <div class="contents">
+            <div class="el"><img src="./images/github.png" alt="CSS" /><span>Git/Github</span></div>
+            <div class="el"><img src="./images/netlify.png" alt="CSS" /><span>Netlify</span></div>
+            <div class="el"><img src="./images/heroku.png" alt="CSS" /><span>Heroku</span> </div>
+          </div>         
         </div>
 
         <div class="skills">
-          <h4>Sub Skills:</h4>
-          <img src="./images/flask.png" alt="Golang" />Flask(Python),
-          <img src="./images/gin.png" alt="Golang" />Gin(Golang),
-          <img src="./images/linux.png" alt="CSS" />Linux
+          <h4>Sub Skills</h4>
+          <div class="contents">
+            <div class="el"><img src="./images/svelte.png" alt="Svelte" /><span>Svelte</span></div>
+            <div class="el"><img src="./images/flask.png" alt="Golang" /><span>Flask</span></div>
+            <div class="el"><img src="./images/gin.png" alt="Golang" /><span>Golang</span></div>
+            <div class="el"><img src="./images/linux.png" alt="CSS" /><span>Linux</span></div>
+          </div>
         </div>
         <br />
       </div>
@@ -167,8 +178,11 @@
             <div class="contents">
               <h3>Gatsby Blog</h3>
               <br />
-              Front-End는 Gatsby로 구성하여 Netlify에 배포. 폴더 내 저장된 마크다운 문서를
-              GraphQL로 읽어들여 렌더링. 테마 적용 및 무한 스크롤 구현.
+              주요 기능 마크다운 문서를 이용하여 작성하는 블로그. 테마 적용 및 무한 스크롤 구현.
+              <div><span>도메인: </span>https://condescending-haibt-3739b3.netlify.app/</div>
+              <div><span>Front-end: </span>Gatsby, Sass</div>
+              <div><span>Back-end: </span>GraphQL</div>
+              <div><span>Deployment: </span>Netlify, GitHub</div>
             </div>
           </a>
         </div>
