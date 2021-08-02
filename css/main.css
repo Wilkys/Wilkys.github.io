@@ -298,6 +298,10 @@ h4 {
     flex-shrink:0;
     width: 200px;
   }
+  .myname .desc {
+    width: 200px;
+    margin-top:50px; 
+  }
 }
 
 
