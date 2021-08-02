@@ -281,10 +281,14 @@ h4 {
 }
 
 @media screen and (max-width:761px){
+  .myname .photos .photo{
+    width: 200px;
+    height: 200px;
+  }  
   .myname .inline_block{
     /* max-width: 1100px; */
     margin: 0 auto;  
-  
+    padding: 10px 0 10px;
     display: flex;  
     flex-wrap: wrap;
     justify-content: center;
@@ -292,7 +296,7 @@ h4 {
   .myname .inline_block .el{
     margin: 0 auto;
     flex-shrink:0;
-    width: 300px;
+    width: 200px;
   }
 }
 
@@ -551,6 +555,7 @@ h4 {
     max-width:400px;
   }
   .projects .inner .project_item a .image {    
+    width: 300px;
     height: 250px;
     margin: 5px;
     flex-shrink: 0;
