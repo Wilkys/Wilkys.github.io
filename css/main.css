@@ -79,7 +79,7 @@ h4 {
 .background::after{
   content: "";
   background-image: url('/images/background.jpg');
-  background-color: rgba(11, 13, 14, 0.1);
+  background-color: rgba(5, 187, 233, 0.3);
   background-size: cover;
   filter: opacity(0.5) drop-shadow(0 0 0 rgb(11, 13, 14));
   position: absolute;
@@ -192,7 +192,8 @@ h4 {
 
 .myname {
   position: relative;  
-  width: 100%;  
+  width: 100%; 
+  min-width:300px; 
   margin: 0 auto;
   padding: 120px 100px 20px;
   box-sizing: border-box;
@@ -237,6 +238,7 @@ h4 {
   padding: 30px 0;
   position: relative;
   max-width: 900px;
+  /* min-width:300px; */
 
   display: flex;
   justify-content: center;
@@ -247,7 +249,7 @@ h4 {
   color: #111;
   font-size: 20px;
   text-shadow: 1px 1px 0 #74c5d1;  
-  background: rgba(200,200,200,0.5);
+  /* background: rgba(200,200,200,0.5); */
   border-radius: 10px;
   /* background: yellow; */
 }
@@ -536,22 +538,28 @@ h4 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width:none;
     /* width: 700px;     */
+  }
+  .projects .inner .project_item{
+    margin:0 auto;
   }
   .projects .inner .project_item a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width:400px;
   }
-  .projects .inner .project_item a .image {
-    width: 300px;
+  .projects .inner .project_item a .image {    
     height: 250px;
     margin: 5px;
     flex-shrink: 0;
   }
   .projects .inner .project_item a .contents {    
-    margin: 5px;
+    margin: 15px;
     flex-shrink: 0.5;
+    font-size: 16px;
+    width: 100%;
   }
 }
 
