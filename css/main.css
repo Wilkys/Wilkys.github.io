@@ -13,9 +13,9 @@ body {
   background-size: cover;
 }
 section {
-  width: 1120px;
+  /* width: 1120px; */
   /* min-height: 800px; */
-  margin: 0 auto;
+  margin: 10 auto;
   padding: 0 10px 10px;
   border-radius: 4px;
 }
@@ -65,136 +65,130 @@ h4 {
   color: #fff;
 }
 .border {
-  width: 700px;
+  width: 90%;
   border-top: 1px dotted #ddd;
   margin: 0 auto;
 }
 
-/* HEADER */
-/** Mobile 화면 **/
-header {
-  width: 100%;
-  border-bottom: 1px solid #c8c8c8;
-  position: fixed;
-  top: 0;
-  z-index: 9;
-}
-header nav {
-  width: 100%;
-  height: auto;
-  background: #34515e;
-}
-header nav .home{
-  display: inline-block;
+.background{
   position: absolute;
-  text-align: center;
-  vertical-align: center;
-  font-size: 30px;
-}
-header nav ul {
-  display: none;
-  height: auto;
-  position: absolute;
-  float: right;
-}
-header nav ul li {
-  display: block;
+  top: -20px;
   width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #576979;
+  height: 700px;
 }
-header nav ul li a {
-  line-height: 70px;
-  font-size: 2.0rem;
-}
-header nav a#trigger {
-  display: block;
-  background-color: #283744;
-  width: 100%;
-  padding-left: 15px;
-  line-height: 80px;
-  position: relative;
-}
-header nav a#trigger::after {
+.background::after{
   content: "";
-  background: url("../images/nav.png") no-repeat;
+  background-image: url('/images/background.jpg');
+  background-color: rgba(11, 13, 14, 0.1);
   background-size: cover;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(11, 13, 14));
   position: absolute;
-  right: 15px;
-  top: 10px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index:-1;
 }
 
-/** Desktop 화면 **/
-@media screen and (min-width: 721px) { 
-  .background{
-    position: absolute;
-    top: -20px;
+/* HEADER */
+  
+.header {    
+  position: fixed;
+  width:100%;
+  /* max-width: 71.25rem; */
+  margin: 0 auto;
+  padding: 5px 5px;
+  background:#74c5d1;
+  z-index: 5;
+}
+.header .inner {
+  max-width: 100%;
+  
+}
+
+.header .inner .home{
+  display: inline-block;
+}
+.header .inner .home a{
+  font-size: 30px;
+  color:whitesmoke;
+  text-shadow: 2px 2px black;
+}
+.header .inner .menu{
+  float: right;
+  font-size: 25px;    
+}
+.header .inner .menu .menu_el {
+  display: inline-block;
+  height: 40px;
+  padding: 0 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 150px;
+  border-bottom: 0;
+  border-right: 1px solid wheat;
+  margin-right: -6px;
+  box-sizing: border-box;
+}
+.header .inner .menu .menu_el:last-child {
+  border-right: 0;
+} 
+.header .inner .menu .menu_el a{
+  color:whitesmoke;
+  text-shadow: 2px 2px black;
+}
+.header .inner a#trigger {
+  display: none;
+}
+/** Mobile 화면 **/
+@media screen and (max-width: 721px) {   
+  .header {
     width: 100%;
-    height: 700px;
-  }
-  .background::after{
-    content: "";
-    background-image: url('/images/background.jpg');
-    background-size: cover;
-    filter: opacity(0.5) drop-shadow(0 0 0 rgb(37, 70, 85));
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index:-1;
-  }
-  .header {    
+    border-bottom: 1px solid #c8c8c8;
     position: fixed;
-    width:100%;
-    /* max-width: 71.25rem; */
-    margin: 0 auto;
-    margin-top: 20px;    
-    z-index: 5;
+    top: 0;
+    z-index: 9;
   }
   .header .inner {
-    max-width: 1140px;
-    
+    width: 100%;
+    height: auto;
+    background: #34515e;
   }
-  
   .header .inner .home{
     display: inline-block;
-  }
-  .header .inner .home a{
-    font-size: 30px;
-    color:whitesmoke;
-    text-shadow: 2px 2px black;
-  }
-  .header .inner .menu{
-    float: right;
-    font-size: 25px;    
-  }
-  .header .inner .menu .menu_el {
-    display: inline-block;
-    height: 40px;
-    padding: 0 20px 0;
-    margin: 0 auto;
+    position: absolute;
     text-align: center;
-    width: 150px;
-    border-bottom: 0;
-    border-right: 1px solid wheat;
-    margin-right: -6px;
-    box-sizing: border-box;
+    vertical-align: center;
+    font-size: 30px;
   }
-  .header .inner .menu .menu_el:last-child {
-    border-right: 0;
-  } 
-  .header .inner .menu .menu_el a{
-    color:whitesmoke;
-    text-shadow: 2px 2px black;
+  .header .inner .menu {
+    display: none;
+    height: auto;
+    position: absolute;
+    float: right;
   }
   .header .inner a#trigger {
-    display: none;
+    display: block;
+    background-color: #22B8D0;
+    width: 100%;
+    padding-left: 15px;
+    line-height: 80px;
+    position: relative;
   }
+  .header .inner a#trigger::after {
+    content: "";
+    background: url("../images/nav.png") no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }  
 }
+
+/* About Me - My Name */
 
 .myname {
   position: relative;  
@@ -223,11 +217,11 @@ header nav a#trigger::after {
 .myname .photos .photo {
   flex-shrink: 0;
   width: 300px;
-  height: 270px;
+  height: 300px;
   overflow: hidden;
   box-sizing: border-box;
   border-radius: 50%;
-  border: 2px dashed white;
+  border: 2px solid rgb(159, 193, 241);
 }
 .myname .photos .photo:first-child {
   margin-right: -80px;
@@ -238,10 +232,11 @@ header nav a#trigger::after {
 }
 
 .myname .desc {  
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-top: 30px;
   padding: 30px 0;
   position: relative;
-  max-width: 700px;
+  max-width: 900px;
 
   display: flex;
   justify-content: center;
@@ -249,24 +244,26 @@ header nav a#trigger::after {
   word-break: keep-all;
   
 
-  color: #333;
+  color: #111;
   font-size: 20px;
-  text-shadow: 1px 1px 0 white;  
+  text-shadow: 1px 1px 0 #74c5d1;  
   background: rgba(200,200,200,0.5);
   border-radius: 10px;
   /* background: yellow; */
 }
 
 .myname .inline_block{
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: 0 auto;  
   padding: 100px;
 
-  display: flex;
+  display: flex;  
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .myname .inline_block .el{
   margin: 10px;
+  flex-shrink:0;
 }
 .myname .inline_block .el span{
   font-size: 24px;
@@ -281,6 +278,25 @@ header nav a#trigger::after {
   text-decoration: none;
 }
 
+@media screen and (max-width:761px){
+  .myname .inline_block{
+    /* max-width: 1100px; */
+    margin: 0 auto;  
+  
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .myname .inline_block .el{
+    margin: 0 auto;
+    flex-shrink:0;
+    width: 300px;
+  }
+}
+
+
+/* skill_group */
+
 .skill_group {
   /* background-color: rgba(194, 203, 224, 0.5); */
   position: relative;
@@ -288,6 +304,7 @@ header nav a#trigger::after {
   padding: 20px 0 60px;
   align-items: center;
   border: 1px dashed lightgray;
+  
 }
 .skill_group h2 {
   font-weight: 700;
@@ -299,7 +316,8 @@ header nav a#trigger::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 40%;
+  /* min-width: 700px; */
   /* background-color: gray; */
   border-radius: 10px;
   padding: 5px;
@@ -340,13 +358,13 @@ header nav a#trigger::after {
 }
 .skill_group .inner .skills .contents .el{
   display: flex;
-  width: 180px;
+  width: 100px;
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(159, 193, 241);
+  background-color: #74c5d1;
   margin: 5px;
-  padding: 5px;
+  padding: 5px 15px 5px;
   border-radius: 5px;
   
 }
@@ -361,55 +379,86 @@ header nav a#trigger::after {
   display: block;
   width: 60%;
 }
+@media screen and (max-width: 721px) { 
+  .skill_group{
+    width: 100%;
+  }
+  .skill_group .inner{
+    width:100%;
+    max-width: none;
+  }
+}
+
+/* Archiving */
+.archiving{
+  margin: 0 auto;
+}
+.archiving h2{
+  padding: 80px 0 50px;
+  text-align: center;
+  font-weight: 700;
+}
+.archiving .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+}
+.archiving .inner a {
+  width: 300px;
+  margin: 5px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;  
+  box-sizing: border-box;
+}
+.archiving .inner a .image{
+  width: 100%;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 5px auto;
+  text-align: center;
+}
+.archiving .inner a:nth-child(1) .image{
+  background-image: url("../images/my_github.png");
+}
+.archiving .inner a:nth-child(2) .image{
+  background-image: url('../images/my_tistory.png');
+}
+.archiving .inner a .contents h3{
+  color: royalblue;
+  font-weight: 400;
+  text-shadow: none;
+  text-align: center;
+}
+.archiving .inner a .contents li{
+  font-weight: 400;
+  text-shadow: none;
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-left: -15px;
+  line-height: 30px;
+}
 
 /* Projects */
 
-.projects {
-  /* background-color: rgba(223, 227, 236, 0.5); */
-  position: relative;
-  margin: 0 auto;
-  padding: 20px 0 60px;
-  align-items: center;
-  border: 1px dashed lightgray;
+.projects{
+  width: 100%;
 }
 .projects h2 {
-  font-weight: 700;
   padding: 80px 0 50px;
-  color: rgb(39, 36, 39);
   text-align: center;
+  font-weight: 700;
 }
 .projects .inner {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  width: 700px;
-}
-@media screen and (min-width: 721px) {
-  .projects .inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 1000px;
-  }
-  .projects .inner .project_item a {
-    display: flex;
-  }
-  .projects .inner .project_item a .image {
-    width: 300px;
-    height: 250px;
-    margin: 5px;
-  }
-  .projects .inner .project_item a .contents {
-    width: 500px; 
-    text-shadow: none;
-    font-size: 20px;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-}
-.projects .inner {
-  display: flex;
   justify-content: center;
+  max-width: 1000px;
 }
 .projects .inner .project_item {
   position: relative;
@@ -419,6 +468,10 @@ header nav a#trigger::after {
   margin: 10px 10px 30px;
   cursor: pointer;
 }
+.projects .inner .project_item a {
+  display: flex;
+}
+
 .projects .inner .project_item a .image {
   /* background-color: rgba(204, 204, 202, 0.8); */
   width: 400px;
@@ -455,50 +508,53 @@ header nav a#trigger::after {
   background-image: url("../images/pyblog.png");
 }
 .projects .inner .project_item a .contents {
-  width: 500px;
+  width: 500px; 
   text-shadow: none;
   font-size: 20px;
-}
-/* 
-.projects .inner .project_item a {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-
-  font-size: 18px;
-  transition: 1.5s;
-} */
-/* 
-.projects .inner .project_item:hover a {
-  display: block;
-  text-align: center;
-  padding-top: 14px;
-  text-shadow: none;
-}
-.projects .inner .project_item:hover a h4 {
-  color: #373737;
-}
-.projects .inner .project_item:hover a p {
-  color: #373737;
-  font-size: 14px;
-  padding: 10px;
+  padding: 15px;
   box-sizing: border-box;
-  text-align: left;
 }
-.projects .inner .project_item:hover .image::after {
-  content: "";
-  background-color: rgba(204, 204, 202, 0.8);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
+
+
+@media screen and (max-width: 721px) {
+  .projects {
+    /* background-color: rgba(223, 227, 236, 0.5); */
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0 60px;
+    align-items: center;
+    border: 1px dashed lightgray;
+  }
+  .projects h2 {
+    font-weight: 700;
+    padding: 80px 0 50px;
+    color: rgb(39, 36, 39);
+    text-align: center;
+    width: 100%;
+  }
+  .projects .inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width: 700px;     */
+  }
+  .projects .inner .project_item a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projects .inner .project_item a .image {
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    flex-shrink: 0;
+  }
+  .projects .inner .project_item a .contents {    
+    margin: 5px;
+    flex-shrink: 0.5;
+  }
+}
+
 
 /* About */
 .about {
@@ -514,7 +570,7 @@ header nav a#trigger::after {
   font-weight: 700;
 }
 .about .description {
-  width: 700px;
+  width: 70%;
   margin: 0 auto;
   font-size: 24px;
 }
@@ -538,10 +594,14 @@ header nav a#trigger::after {
 .about .description ul li {
   font-size: 24px;
 }
-@media screen and (min-width: 721px) {
+@media screen and (max-width: 721px) {
+  .about {
+    width: 100%;
+  }
+  
   .about .description {
     font-size: 24px;
-    width: 900px;
+    width: 90%;
     margin: 0 auto;
   }
   .about .description .abstract {
