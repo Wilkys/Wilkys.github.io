@@ -269,13 +269,15 @@ h4 {
 }
 .myname .inline_block .el span{
   font-size: 24px;
+  color: #726e6e;
 }
 .myname .inline_block .el p{
   font-size: 18px;
+  color: #726e6e;
 }
 .myname .inline_block .el a{
   font-size: 18px;
-  color: black;
+  color: #726e6e;
   text-shadow:none;
   text-decoration: none;
 }
@@ -293,10 +295,13 @@ h4 {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .myname .inline_block .el{
+  .myname .inline_block {
     margin: 0 auto;
     flex-shrink:0;
-    width: 200px;
+    width: 200px;    
+  }
+  .myname .inline_block span{
+    color: #db0b0be7;
   }
   .myname .desc {
     width: 200px;
